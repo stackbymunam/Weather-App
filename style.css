@@ -18,10 +18,13 @@
  }
 
  @font-face {
-     font-family: "DM Sans";
-     src: url("./assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf") format("turetype");
-     font-style: italic;
- }
+    
+    font-family: "DM Sans";
+    src: url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    font-style: italic;
+}
+
+ 
 
  @font-face {
      font-family: "DM Sans";
@@ -197,7 +200,7 @@
      display: flex;
      justify-content: center;
      margin-top: 1rem;
-     gap: 5.3rem;
+   gap: 6rem;  
  }
 
  .input input {
@@ -270,58 +273,67 @@
      color: hsl(240, 6%, 70%);
  }
 
- .main-wheather-continer {
-     display: flex;
-     gap: 1rem;
- }
-
+.main-wheather-continer {
+    display: flex;
+    gap: 4rem; /* Changed from 58px to 2rem for better spacing */
+    padding: 0 2rem; /* Add padding for better alignment */
+    max-width: 1400px; /* Add max-width */
+    margin: 0 auto; /* Center the container */
+}
 
  .show-wheather-container {
-     display: flex;
-     gap: 13rem;
-     background: url("./assets/images/bg-today-large.svg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     border-radius: 8px;
-     min-height: 34vh;
-     width: 100%;
-     max-width: 505px;
-     margin-left: 9rem;
-     margin-top: 1.5rem;
-
-
+      display: flex;
+    justify-content: space-between; /* Changed from gap: 12rem */
+    align-items: flex-start;
+    background: url("./Weather-App/assets/images/bg-today-large.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    min-height: 17vh;
+    width: 100%;
+    max-width: 505px;
+    padding: 2rem 1.5rem; /* Add padding instead of margins */
+    margin-top: 1.5rem;
+    margin-left: 13rem;
  }
 
 
 
- .temperauremain {
-     display: flex;
-     gap: 0.5vw;
- }
+ 
 
  .temperauremain img {
-     height: 8rem;
-     width: auto;
-     margin-left: -8rem;
-     margin-top: -2rem;
- }
+    height: 80px; /* Fixed size */
+    width: 80px;
+    margin: 0; /* Remove negative margins */
+}
+ 
+
+.temperauremain h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    
+}
 
  .city-info {
-     margin-top: 3.5rem;
-     margin-left: 1rem;
-     font-size: 0.6rem;
-     color: hsl(0, 0%, 100%);
-     font-family: "DM Sans";
+      margin-top: 1.5rem;
+    margin-left: 0;
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 100%);
+    font-family: "DM Sans";
+    font-weight: b;
  }
 
  .temperauremain {
-     margin-top: 3rem;
-     color: hsl(250, 6%, 84%);
-     margin-left: 3.2rem;
-     font-size: 1.5rem;
-     font-family: "Dm Sans";
-     font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 0;
+    color: hsl(250, 6%, 84%);
+    font-size: 1.5rem;
+    font-family: "Dm Sans";
+    font-weight: 300;
  }
 
  .weather-stats {
@@ -329,7 +341,7 @@
      justify-content: center;
      gap: 1rem;
      margin-top: 2rem;
-     margin-left: 9rem;
+     margin-left: 13rem;
      flex-wrap: wrap;
      color: hsl(0, 0%, 100%);
  }
@@ -369,7 +381,7 @@
      font-weight: 600;
      margin-bottom: 0.8rem;
      transform: translateY(28px);
-     margin-left: 9rem;
+     margin-left: 13rem;
      font-family: "DM Sans";
  }
 
@@ -377,7 +389,7 @@
      display: flex;
      gap: 0.6rem;
      margin-top: 3rem;
-     margin-left: 8.8rem;
+     margin-left: 12.8rem;
      overflow-x: auto;
      padding-bottom: 0.5rem;
      font-family: "DM Sans";
@@ -617,17 +629,7 @@
      animation: fadeIn 0.13s;
  }
 
- @keyframes fadeIn {
-     from {
-         opacity: 0;
-         transform: translateY(-8px);
-     }
-
-     to {
-         opacity: 1;
-         transform: translateY(0);
-     }
- }
+ 
 
  .dropdown-day-item {
      color: #fff;
@@ -766,18 +768,6 @@
 
 
 
- @keyframes fadeIn {
-     from {
-         opacity: 0;
-         transform: translateY(-8px);
-     }
-
-     to {
-         opacity: 1;
-         transform: translateY(0);
-     }
- }
-
  .dropdown-day-item {
      color: #fff;
      padding: 0.45rem 1rem 0.45rem 1rem;
@@ -807,6 +797,7 @@
  .dropdown-arrow.open {
      transform: rotate(180deg);
  }
+
 
  @media only screen and (max-width: 600px) {
      .nav-elements {
@@ -1096,3 +1087,4 @@
          font-size: 1rem;
      }
  }
+
