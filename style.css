@@ -285,7 +285,7 @@
       display: flex;
     justify-content: space-between; /* Changed from gap: 12rem */
     align-items: flex-start;
-    background: url("./Weather-App/assets/images/bg-today-large.svg");
+    background: url("./assets/images/bg-today-large.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1087,4 +1087,5 @@
          font-size: 1rem;
      }
  }
+
 
