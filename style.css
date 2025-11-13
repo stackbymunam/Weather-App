@@ -275,17 +275,17 @@
 
 .main-wheather-continer {
     display: flex;
-    gap: 4rem; /* Changed from 58px to 2rem for better spacing */
-    padding: 0 2rem; /* Add padding for better alignment */
-    max-width: 1400px; /* Add max-width */
-    margin: 0 auto; /* Center the container */
+    gap: 4rem; 
+    padding: 0 2rem; 
+    max-width: 1400px;
+    margin: 0 auto; 
 }
 
  .show-wheather-container {
       display: flex;
-    justify-content: space-between; /* Changed from gap: 12rem */
+    justify-content: space-between; 
     align-items: flex-start;
-    background: url("./assets/images/bg-today-large.svg");
+    background: url("./assets/images/bg-today-large");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -293,7 +293,7 @@
     min-height: 17vh;
     width: 100%;
     max-width: 505px;
-    padding: 2rem 1.5rem; /* Add padding instead of margins */
+    padding: 2rem 1.5rem; 
     margin-top: 1.5rem;
     margin-left: 13rem;
  }
@@ -303,9 +303,9 @@
  
 
  .temperauremain img {
-    height: 80px; /* Fixed size */
+    height: 80px; 
     width: 80px;
-    margin: 0; /* Remove negative margins */
+    margin: 0; 
 }
  
 
@@ -1087,5 +1087,6 @@
          font-size: 1rem;
      }
  }
+
 
 
