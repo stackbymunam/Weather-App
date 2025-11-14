@@ -76,7 +76,6 @@
 
  .dropdown.dropdowndisplay {
      display: block;
-     /* visible when toggled */
  }
 
  .dropdown-btn {
@@ -285,7 +284,7 @@
       display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-    background: url("./assets/images/bg-today-large");
+    background: url(./assets/images/bg-today-large.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1087,6 +1086,7 @@
          font-size: 1rem;
      }
  }
+
 
 
 
